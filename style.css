@@ -1,132 +1,120 @@
- .navbar {
-     align-items: flex-start;
- }
+.container-fluid>.row {
+    height: 100vh;
+}
 
- .first-col .navbar>.container-fluid {
-     display: block;
- }
+.first-col .navbar .container-fluid {
+    display: block;
+}
 
- .navbar-toggler {
-     background-color: white;
- }
+.navbar-toggler {
+    background-color: #FFFFFF;
+}
 
- .message, .third-col {
-     background-color: #FFFAFA;
- }
+.second-col {
+    max-height: 90vh;
+    overflow-y: scroll;
+}
 
- .container-fluid>.row {
-     height: 100vh;
- }
+.second-col .row:nth-child(odd) {
+    background-color: #F5F5F5;
+}
 
- .second-col {
-     max-height: 90vh;
-     overflow-y: scroll;
- }
+.third-col {
+    background-color: #FFFAFA;
+}
 
- .main-message {
-     max-height: 90vh;
-     overflow-y: scroll;
- }
+.main-message {
+    max-height: 90vh;
+    overflow-y: scroll;
+}
 
- .main-btn button {
-     background-color: #BDFEF2;
-     color: black;
-     border: none;
-     box-shadow: 1px 1px 4px black;
-     min-width: 100px;
- }
+.messenger-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
 
- .second-col .row:nth-child(odd) {
-     background-color: #F5F5F5;
- }
+.messenger-name {
+    flex-grow: 3;
+}
 
- .messenger-icon {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-content: center;
- }
+.main-btn button {
+    background-color: #BDFEF2;
+    color: black;
+    border: none;
+    box-shadow: 1px 1px 4px black;
+    min-width: 100px;
+}
 
- .messenger-name {
-     flex-grow: 3;
- }
+@media (max-width: 992px) {
+    .hidden-col {
+        display: none;
+    }
+}
 
- @media (min-width: 768px) and (max-width: 992px) {
-     .first-col {
-         display: flex;
-         justify-content: space-evenly;
-     }
+@media (min-width: 992px) {
+    .hidden-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-     .navbar {
-         align-items: center;
-     }
+    .first-col .card-body {
+        display: none;
+    }
+}
 
-     .navbar-nav {
-         display: flex !important;
-     }
+@media (min-width: 768px) and (max-width: 992px) {
+    .first-col {
+        display: flex;
+        justify-content: space-evenly;
+    }
 
-     .first-col .card {
-         display: flex;
-         flex-direction: row;
-         align-items: center;
-     }
+    .navbar-nav {
+        display: flex !important;
+    }
 
-     .main-message {
-         max-height: 75vh;
-         overflow-y: scroll;
-     }
+    .first-col .card {
+        flex-direction: row;
+    }
 
- }
+    .main-message {
+        max-height: 75vh;
+        overflow-y: scroll;
+    }
 
- @media (max-width: 768px) {
-     .first-col {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-between;
-     }
+}
 
-     .first-col>.card>img {
-         width: 6rem !important;
-         height: 6rem !important;
-     }
+@media (max-width: 768px) {
+    .first-col {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-     .second-col {
-         max-height: 30%;
-     }
+    .first-col>.card>img {
+        width: 6rem !important;
+        height: 6rem !important;
+    }
 
- }
+    .second-col {
+        max-height: 30%;
+    }
 
- @media (max-width: 992px) {
-     .hidden-col {
-         display: none;
-     }
- }
+}
 
- @media (min-width: 992px) {
-     .hidden-col {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-     }
+@media (width: 768px) {
+    .first-col {
+        justify-content: space-evenly;
+    }
 
-     .first-col .card-body {
-         display: none;
-     }
- }
+    .first-col>.card>img {
+        width: 8rem !important;
+        height: 8rem !important;
+    }
 
- @media (width: 768px) {
-     .first-col {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-evenly !important;
-     }
-
-     .first-col>.card>img {
-         width: 8rem !important;
-         height: 8rem !important;
-     }
-
-     .second-col {
-         max-height: 100vh;
-     }
- }
+    .second-col {
+        max-height: 100vh;
+    }
+}
