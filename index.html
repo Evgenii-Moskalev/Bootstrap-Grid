@@ -24,7 +24,7 @@
                     <div class="card-body">
                         <p class="card-text">Email name</p>
                     </div>
-                    <button type="button" class="btn btn-warning m-1">Compose</button>
+                    <button type="button" class="btn btn-warning m-1" id="compose-btn">Compose</button>
                 </div>
                 <nav class="navbar navbar-expand-md m-2 bg-black">
                     <div class="container-fluid">
@@ -205,10 +205,9 @@
                             </p>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message"
-                                rows="3">
-                        </textarea>
+                            <label for="exampleFormControlTextarea1" class="form-label">Type message:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Message"></textarea>
                         </div>
                         <div class="mb-3">
                             <label for="formFile" class="form-label"> <img src="/img//clip.png" alt="clip icon"
@@ -222,12 +221,36 @@
                     <button type="button" class="btn btn-primary m-2">Forward</button>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-        </script>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">New Message</h5>
+                    <button type="button" class="btn-close text-reset close-offcanvas" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="To:">
+                            <div id="emailHelp" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Type message:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+            </script>
+        <script src="/main.js"></script>
 </body>
 
 </html>
