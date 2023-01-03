@@ -46,7 +46,10 @@
     box-shadow: 1px 1px 4px black;
     min-width: 100px;
 }
-
+.main-btn button:hover{
+    background-color: #39f9d6;
+    color: black;
+}
 @media (max-width: 992px) {
     .hidden-col {
         display: none;
