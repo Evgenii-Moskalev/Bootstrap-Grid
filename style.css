@@ -44,15 +44,18 @@
 .messenger-name {
     flex-grow: 3;
 }
-.clip-icon{
+
+.clip-icon {
     box-shadow: 1px 1px 4px black;
     border-radius: 4px;
 }
-.clip-icon:active{
+
+.clip-icon:active {
     box-shadow: 0px 0px 2px black;
 }
 
-.main-btn button {
+.main-btn button,
+.offcanvas-body .btn {
     background-color: #BDFEF2;
     color: black;
     border: none;
